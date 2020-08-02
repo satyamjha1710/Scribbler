@@ -4,7 +4,7 @@
 	if(isset($_SESSION['tempScribbleruser']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$user=$_SESSION['tempScribbleruser'];
 		$que1=mysqli_query($link,"select * from users where Email='$user' ");
 		$rec=mysqli_fetch_array($que1);
@@ -33,7 +33,7 @@
 		$user_data=mysqli_fetch_array($que_user_data);
 		$userid=$user_data[0];
 		$user_join_time=$user_data[6];
-		mysqli_query($link,"insert into user_post(user_id,post_txt,post_time,priority) values($userid,'Join Faceback','$user_join_time','Public');");
+		mysqli_query($link,"insert into user_post(user_id,post_txt,post_time,priority) values($userid,'Join Scribbler','$user_join_time','Public');");
 		mysqli_query($link,"insert into user_status values($userid,'Online')");
 		mysqli_query($link,"insert into user_info(user_id) values($userid)");
 		
@@ -50,7 +50,7 @@
 ?>
 	<link href="step3_css/step3.css" rel="stylesheet" type="text/css">
     <link href="../../Scribbler_font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../../Scribbler_title_icon/Faceback.ico" />
+    <LINK REL="SHORTCUT ICON" HREF="../../Scribbler_title_icon/Scribbler.jpg" />
 	<script src="step3_js/que_check.js" language="javascript">
 	</script>
 </head>

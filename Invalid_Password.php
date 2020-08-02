@@ -3,8 +3,8 @@
 ?>
 <html>
 <head>
-<title> Facebook </title>
-<LINK REL="SHORTCUT ICON" HREF="Scribbler_files/Scribbler_title_icon/Faceback.ico" />
+<title> Scribbler </title>
+<LINK REL="SHORTCUT ICON" HREF="Scribbler_files/Scribbler_title_icon/Scribbler.jpg" />
 	<style>
 		#singup_button
 		{
@@ -27,11 +27,11 @@
 			height:25;
 			width:49;
 			padding:2;
-			background-color:#5B74A8; color:#FFFFFF;
-			border-top:#29447E;
-			border-right-color:#29447E;
+			background-color:White; color:#FFFFFF;
+			border-top:White;
+			border-right-color:White;
 			border-bottom-color:#1A356E;
-			border-left-color:#29447E;
+			border-left-color:White;
 			font-weight:bold;
 		}
 	</style>
@@ -40,7 +40,7 @@
 <body>
 
 <div style="position:absolute;left:0;top:0; height:13%; width:100%; z-index:-1; background:#3B5998">   </div>
-<div style="position:absolute;left:13.5%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold;"> <font face="myScribblerFont">  3D Facebook </font> </div>
+<div style="position:absolute;left:13.5%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold;"> <font face="myScribblerFont">  3D Scribbler </font> </div>
 
 <div style="position:absolute;left:13.6%; top:14.8%;"> <a href="index.php" style="text-decoration:none;"> <input type="button" value="Sign Up" id="singup_button">    </a> </div>
 
@@ -49,7 +49,7 @@
 <div style="position:absolute;left:26%; top:84.9%; height:1; width:46.85%; background-color:#CCCCCC; "> </div>
 <div style="position:absolute;left:72.75%; top:25%; height:60%; width:0.10%; background-color:#CCCCCC; "> </div>
 
-<div style="position:absolute; left:27.4%; top:28.2%;">  <font size="4"> Faceback Login </font>  </div>
+<div style="position:absolute; left:27.4%; top:28.2%;">  <font size="4"> Scribbler Login </font>  </div>
 
 <div style="position:absolute;left:27.4%; top:32.8%; height:1; width:44.05%; background-color:#CCCCCC; "> </div>
 
@@ -72,5 +72,5 @@
 	<div style="position:absolute; left:43.3%; top:66.7%; font-size:12; ">  <input type="checkbox" checked="checked">   Keep me logged in </div>
 	<div style="position:absolute;left:43.5%;top:71.7%; ">  <input type="submit" name="Login" value="Log In" id="login_button" />  </div>
 	<div style="position:absolute;left:47.5%;top:71.7%; "> or </div>
-	<div style="position:absolute;left:49%;top:71.7%; "> <a href="index.php" style="color:#3B5998;text-decoration:none;"> Sign up for Facebook </a> </div>
+	<div style="position:absolute;left:49%;top:71.7%; "> <a href="index.php" style="color:#3B5998;text-decoration:none;"> Sign up for Scribbler </a> </div>
 	<div style="position:absolute;left:43.5%; top:77.2%; font-size:12px;"> <a href='Forgot_Password.php' style="text-decoration:none; color:#3B5998;" > Forgot your password? </a> </div>

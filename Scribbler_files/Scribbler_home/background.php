@@ -6,7 +6,7 @@
 	</script>
 	<script src="background_file/background_js/submited_searched_reco_event.js"></script>
     <link href="../Scribbler_font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../Scribbler_title_icon/Faceback.ico" />
+    <LINK REL="SHORTCUT ICON" HREF="../Scribbler_title_icon/Scribbler.jpg" />
 </head>
 <body>
 
@@ -48,7 +48,7 @@
 error_reporting(1);
 		$user=$_SESSION['Scribbleruser'];
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$query1=mysqli_query($link,"select * from users where Email='$user'");
 		$rec1=mysqli_fetch_array($query1);
 		$userid=$rec1[0];

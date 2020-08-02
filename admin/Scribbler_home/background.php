@@ -1,7 +1,7 @@
 <html>
 <head>
 	<link href="../Scribbler_font/font.css" rel="stylesheet" type="text/css">
-	<LINK REL="SHORTCUT ICON" HREF="../img/Facebook.ico" />
+	<LINK REL="SHORTCUT ICON" HREF="../img/Scribbler.jpg" />
 	<script src="background_file/background_js/event.js"></script>
 	<script src="background_file/background_js/searching.js"></script>
 	<script src="background_file/background_js/searched_reco_event.js">
@@ -13,7 +13,7 @@
 <!--Head background-->
 <div style="position:fixed;left:0;top:0; height:6%; width:100%; z-index:1; background:#3B5998">   </div>
 <!--Head Scribbler text-->
-<div style="position:fixed;left:4.05%;top:0.8%;font-size:25;font-weight:900; z-index:2;"> <a href="Home.php" style="color:#FFFFFF; text-decoration:none;" onMouseOver="on_head_Scribbler_text()" onMouseOut="out_head_Scribbler_text()"> <font face="myScribblerFont"> facebook </font> </a> </div>
+<div style="position:fixed;left:4.05%;top:0.8%;font-size:25;font-weight:900; z-index:2;"> <a href="Home.php" style="color:#FFFFFF; text-decoration:none;" onMouseOver="on_head_Scribbler_text()" onMouseOut="out_head_Scribbler_text()"> <font face="myScribblerFont"> Scribbler </font> </a> </div>
 <!--Head Scribbler text background-->
 <div style="position:fixed;left:4%;top:1%; height:5%; width:8%; z-index:1; background:#4A63A5; display:none;" id="head_Scribbler_text_backgraound">   </div>
 
@@ -159,7 +159,7 @@
 <?php
 error_reporting(1);
 	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"facebook");
+	mysqli_select_db($link,"Scribbler");
 	
 	 $query_online=mysqli_query($link,"select * from user_status where status='Online'");
 	 $online_count=mysqli_num_rows($query_online);

@@ -3,7 +3,7 @@
 ?>
 <?php
 	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"facebook");
+	mysqli_select_db($link,"Scribbler");
 
 	$Email=$_POST['Email'];
 	$que0=mysqli_query($link,"select * from users where Email='$Email'");
@@ -33,11 +33,11 @@
 			height:35;
 			width:80;
 			padding:2;
-			background-color:#5B74A8; color:#FFFFFF;
-			border-top:#29447E;
-			border-right-color:#29447E;
+			background-color:White; color:#FFFFFF;
+			border-top:White;
+			border-right-color:White;
 			border-bottom-color:#1A356E;
-			border-left-color:#29447E;
+			border-left-color:White;
 			font-size:15px;
 			font-weight:bold;
 			box-shadow:5px 0px 10px 1px rgb(0,0,0);

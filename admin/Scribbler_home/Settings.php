@@ -4,7 +4,7 @@
 	if(isset($_SESSION['Scribbleradmin']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$admin_user=$_SESSION['Scribbleradmin'];
 		$que_admin_info=mysqli_query($link,"select * from admin_info where Username='$admin_user'");
 		$que_admin_data=mysqli_fetch_array($que_admin_info);

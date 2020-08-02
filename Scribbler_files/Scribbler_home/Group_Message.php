@@ -4,7 +4,7 @@
 	if(isset($_SESSION['Scribbleruser']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$user_email=$_SESSION['Scribbleruser'];
 		$que_user_info=mysqli_query($link,"select * from users where Email='$user_email'");
 		$user_data=mysqli_fetch_array($que_user_info);
@@ -36,11 +36,11 @@
 	height:25;
 	width:80;
 	padding:2;
-	background-color:#5B74A8; color:#FFFFFF;
-	border-top:#29447E;
-	border-right-color:#29447E;
+	background-color:White; color:#FFFFFF;
+	border-top:White;
+	border-right-color:White;
 	border-bottom-color:#1A356E;
-	border-left-color:#29447E;
+	border-left-color:White;
 	font-weight:bold;
 }
 </style>

@@ -6,7 +6,7 @@
 		$v_user_id=$_GET['id'];
 		$user=$_SESSION['Scribbleruser'];
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$query1=mysqli_query($link,"select * from users where Email='$user'");
 		$rec1=mysqli_fetch_array($query1);
 		$userid=$rec1[0];
@@ -641,7 +641,7 @@
 <!-- About bg-->
 	<a href="about.php?id=<?php echo $v_user_id; ?>"> <div style="position:absolute; left:15%; top:65%; background:#F6F7F8; height:6%; width:20%; z-index:-1; box-shadow:0px 0px 5px 0px rgb(0,0,0);" onMouseOver="on_about_bg()"> </div>
 	<div style="display:none;" id="about_on_bg">	
-	<div style="position:absolute; left:15%; top:65%; background:#F9FAScribbler; height:6%; width:20%; z-index:-1;" onMouseOut="out_about_bg()">  </div>
+	<div style="position:absolute; left:15%; top:65%; background:#F9FAFA; height:6%; width:20%; z-index:-1;" onMouseOut="out_about_bg()">  </div>
 	</div>
 	</a>	
 	<div style="position:absolute; left:16%; top:66%;"> <a href="about.php" style="color:#6A7480;text-decoration:none;font-size:17px; font-weight:bold;"> About </a> </div>
@@ -673,7 +673,7 @@
 <!-- Photos bg-->
 	<a href="photos.php?id=<?php echo $v_user_id; ?>"> <div style="position:absolute; left:15%; top:100%; background:#F6F7F8; height:6.1%; width:20%; z-index:-1; box-shadow:0px 0px 5px 0px rgb(0,0,0);" onMouseOver="on_photos_bg()"> </div>
 	<div style="display:none;" id="photos_on_bg">	
-	<div style="position:absolute; left:15%; top:100%; background:#F9FAScribbler; height:6%; width:20%; z-index:-1;" onMouseOut="out_photos_bg()">  </div>
+	<div style="position:absolute; left:15%; top:100%; background:#F9FAFA; height:6%; width:20%; z-index:-1;" onMouseOut="out_photos_bg()">  </div>
 	</div>
 	</a>	
 	<div style="position:absolute; left:16%; top:101%;"> <a href="photos.php" style="color:#6A7480;text-decoration:none;font-size:17px; font-weight:bold;"> Photos </a> </div>

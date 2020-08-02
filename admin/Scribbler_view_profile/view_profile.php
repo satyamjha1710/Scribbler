@@ -5,7 +5,7 @@
 	{	
 		$v_user_id=$_GET['id'];
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		
 		include("background.php");
 ?>

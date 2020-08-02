@@ -9,7 +9,7 @@ error_reporting(1);
 	$vid=$_GET['v_id'];
 
 	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"facebook");
+	mysqli_select_db($link,"Scribbler");
 	
 	$que_user_info=mysqli_query($link,"select * from users where user_id=$vid");
 	$user_data=mysqli_fetch_array($que_user_info);

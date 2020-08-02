@@ -6,7 +6,7 @@
 		$v_user_id=$_GET['id'];
 		$user=$_SESSION['Scribbleruser'];
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$query1=mysqli_query($link,"select * from users where Email='$user'");
 		$rec1=mysqli_fetch_array($query1);
 		$userid=$rec1[0];
@@ -135,7 +135,7 @@
 		<div style="position:absolute;left:59%;top:169%; color:#3B59A4; font-weight:bold;"> <?php echo $web; ?> </div>
 
 
-<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook ID </div>
+<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Scribbler ID </div>
 
 <?php
 	$Scribbler_id=$user_info_data[9];

@@ -7,11 +7,11 @@
 	height:25;
 	width:55;
 	padding:2;
-	background-color:#5B74A8; color:#FFFFFF;
-	border-top:#29447E;
-	border-right-color:#29447E;
+	background-color:White; color:#FFFFFF;
+	border-top:White;
+	border-right-color:White;
 	border-bottom-color:#1A356E;
-	border-left-color:#29447E;
+	border-left-color:White;
 	font-weight:bold;
 }
 </style>

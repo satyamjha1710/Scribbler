@@ -1,7 +1,7 @@
 <?php
 error_reporting(1);
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 ?>
 <?php 
 	$que_v_user_info=mysqli_query($link,"select * from users where user_id=$v_user_id");
@@ -128,7 +128,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 <head>
 	<title> <?php echo $v_name; ?> </title>
     <link href="../Scribbler_font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../img/Faceback.ico" />
+    <LINK REL="SHORTCUT ICON" HREF="../img/Scribbler.jpg" />
 	<script src="background_file/background_js/event.js"></script>
 	<script src="background_file/background_js/searching.js"></script>
 	<script src="background_file/background_js/searched_reco_event.js"></script>
@@ -250,12 +250,12 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 	height:50;
 	width:100;
 	padding:2;
-	background-color:#5B74A8; 
+	background-color:White; 
 	color:#FFFFFF;
-	border-top:#29447E;
-	border-right-color:#29447E;
+	border-top:White;
+	border-right-color:White;
 	border-bottom-color:#1A356E;
-	border-left-color:#29447E;
+	border-left-color:White;
 	font-weight:bold;
 	box-shadow:0px 0px 10px 1px rgb(0,0,0);
 }

@@ -5,7 +5,7 @@
 	{
 		$v_user_id=$_GET['id'];
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$query1=mysqli_query($link,"select * from users where user_id=$v_user_id");
 		$rec1=mysqli_fetch_array($query1);
 		$userid=$rec1[0];
@@ -59,7 +59,7 @@
 		$u_priority=$_POST['priority'];
 		$u_web=$_POST['web'];
 		$u_Scribbler_id=$_POST['Scribblerid'];
-		mysqli_query($link,"update user_info set mobile_no='$u_m_no',mobile_no_priority='$u_priority',website='$u_web',Facebook_ID='$u_Scribbler_id' where user_id=$userid;");
+		mysqli_query($link,"update user_info set mobile_no='$u_m_no',mobile_no_priority='$u_priority',website='$u_web',Scribbler_ID='$u_Scribbler_id' where user_id=$userid;");
 	}
 	
 		include("background.php");
@@ -376,7 +376,7 @@
 	}
 ?> 
 
-<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook ID </div>
+<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Scribbler ID </div>
 
 <?php
 	$Scribbler_id=$user_info_data[9];
@@ -390,7 +390,7 @@
 	else
 	{
 ?>
-		<div style="position:absolute;left:61%;top:175%; color:#3B59A4; font-weight:bold;"> Add Facebook ID </div>
+		<div style="position:absolute;left:61%;top:175%; color:#3B59A4; font-weight:bold;"> Add Scribbler ID </div>
 <?php
 	}
 ?> 
@@ -415,7 +415,7 @@
     
   <div style="position:absolute;left:53%; top:169%; font-size:18px; color:#89919C;">Website</div>
 <div style="position:absolute;left:61%;top:168%;"> <input type="text" value="<?php echo $web; ?>" name="web" maxlength="40" style="height:33;width:300;font-size:16px;"> </div>
-<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Facebook ID </div>
+<div style="position:absolute;left:53%; top:175%; font-size:18px; color:#89919C;">Scribbler ID </div>
 <div style="position:absolute;left:61%;top:174.4%;"> <input type="text" value="<?php echo $Scribbler_id; ?>" name="Scribblerid" maxlength="40" style="height:33;width:300;font-size:16px;"> </div>
 
 <div style="position:absolute;left:59%;top:185%;"> <input type="submit" value="Save" name="contact_sub" class="save_button"> </div>

@@ -2,7 +2,7 @@
 if(isset($_POST['Login']))
 {error_reporting(1);
 	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"facebook");
+	mysqli_select_db($link,"Scribbler");
 	
 	$user=$_POST['username'];
 	$pass=$_POST['password'];

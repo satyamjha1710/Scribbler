@@ -4,7 +4,7 @@
 	if(isset($_SESSION['tempScribbleruser']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$user=$_SESSION['tempScribbleruser'];
 		$que1=mysqli_query($link,"select * from users where Email='$user' ");
 		$rec=mysqli_fetch_array($que1);
@@ -38,7 +38,7 @@
 ?>
 	<link href="step2_css/step2.css" rel="stylesheet" type="text/css">
     <link href="../../Scribbler_font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../../Scribbler_title_icon/Faceback.ico" />
+    <LINK REL="SHORTCUT ICON" HREF="../../Scribbler_title_icon/Scribbler.jpg" />
 	<script src="step2_js/que_check.js" language="javascript">
 	</script>
 </head>

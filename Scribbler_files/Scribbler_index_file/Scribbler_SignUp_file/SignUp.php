@@ -3,7 +3,7 @@ if(isset($_POST['signup']))
 {
 error_reporting(1);
 	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"facebook");
+	mysqli_select_db($link,"Scribbler");
 	
 	$Email=$_POST['email'];
 

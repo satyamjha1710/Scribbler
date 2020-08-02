@@ -4,7 +4,7 @@
 	if(isset($_SESSION['Scribbleruser']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		$user_email=$_SESSION['Scribbleruser'];
 		$que_user_info=mysqli_query($link,"select * from users where Email='$user_email'");
 		$user_data=mysqli_fetch_array($que_user_info);

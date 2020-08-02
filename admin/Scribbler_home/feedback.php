@@ -4,7 +4,7 @@
 	if(isset($_SESSION['Scribbleradmin']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		
 		if(isset($_POST['delete_feedback']))
 		{

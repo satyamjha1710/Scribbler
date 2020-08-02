@@ -4,7 +4,7 @@
 <html>
 <head>
 <title> Scribbler </title>
-<LINK REL="SHORTCUT ICON" HREF="Scribbler_files/Scribbler_title_icon/Faceback.ico" />
+<LINK REL="SHORTCUT ICON" HREF="Scribbler_files/Scribbler_title_icon/Scribbler.jpg" />
 	<style>
 		#singup_button
 		{
@@ -27,11 +27,11 @@
 			height:25;
 			width:49;
 			padding:2;
-			background-color:#5B74A8; color:#FFFFFF;
-			border-top:#29447E;
-			border-right-color:#29447E;
+			background-color:White; color:#FFFFFF;
+			border-top:White;
+			border-right-color:White;
 			border-bottom-color:#1A356E;
-			border-left-color:#29447E;
+			border-left-color:White;
 			font-weight:bold;
 		}
 	</style>
@@ -39,8 +39,10 @@
 </head>
 <body>
 
-<div style="position:absolute;left:0;top:0; height:13%; width:100%; z-index:-1; background:#3B5998">   </div>
-<div style="position:absolute;left:13.5%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold;"> <font face="myScribblerFont">  Scirbbler </font> </div>
+<div style="position:absolute;left:0;top:0; height:13%; width:100%; z-index:-1; background:#201045">   </div>
+<div style="position:absolute;left:50 px;top:20 px;"><img src="Scribbler_files/Scribbler_title_icon/Scribbler.jpg" width="90px" height="70 px" ></div>
+
+<div style="position:absolute;left:13.5%; top:3.3%; font-size:45; font-weight:900; color:#FFFFFF; font-weight:bold;"> <font face="myScribblerFont">  Scribbler </font> </div>
 
 <div style="position:absolute;left:13.6%; top:14.8%;"> <a href="index.php" style="text-decoration:none;"> <input type="button" value="Sign Up" id="singup_button">    </a> </div>
 

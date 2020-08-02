@@ -9,7 +9,7 @@ error_reporting(1);
 	session_start();
 	$user=$_SESSION['Scribbleruser'];
 	$link=mysqli_connect("localhost","root","");
-	mysqli_select_db($link,"facebook");
+	mysqli_select_db($link,"Scribbler");
 	if($id!='')
 	{
 		$query1=mysqli_query($link,"select * from users where Name like('%$id%')");

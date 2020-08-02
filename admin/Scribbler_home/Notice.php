@@ -4,7 +4,7 @@
 	if(isset($_SESSION['Scribbleradmin']))
 	{
 		$link=mysqli_connect("localhost","root","");
-		mysqli_select_db($link,"facebook");
+		mysqli_select_db($link,"Scribbler");
 		
 		if(isset($_POST['notice_users']))
 		{
@@ -56,12 +56,12 @@
 	height:50;
 	width:100;
 	padding:2;
-	background-color:#5B74A8; 
+	background-color:White; 
 	color:#FFFFFF;
-	border-top:#29447E;
-	border-right-color:#29447E;
+	border-top:White;
+	border-right-color:White;
 	border-bottom-color:#1A356E;
-	border-left-color:#29447E;
+	border-left-color:White;
 	font-weight:bold;
 	box-shadow:0px 0px 10px 1px rgb(0,0,0);
 }
